@@ -1,0 +1,127 @@
+name: Suggest an AI Resource
+description: Propose a new AI tool, model, framework, agent, SDK, or developer resource for AI Atlas.
+title: "[Suggestion]: <Resource Name>"
+labels: ["suggestion", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping map the AI ecosystem! Please provide clear, factual information about the resource.
+        Before submitting, please search existing issues and pull requests to ensure it has not already been proposed.
+
+  - type: input
+    id: resource_name
+    attributes:
+      label: Resource Name
+      description: The official name of the tool, framework, model, or product.
+      placeholder: "e.g., vLLM, LangChain, Claude 3.5 Sonnet, Ollama"
+    validations:
+      required: true
+
+  - type: input
+    id: official_website
+    attributes:
+      label: Official Website / Landing Page
+      description: Primary URL for the project or product.
+      placeholder: "https://example.com"
+    validations:
+      required: true
+
+  - type: input
+    id: source_repo
+    attributes:
+      label: Source Repository (if applicable)
+      description: Link to GitHub/GitLab repository for open-source resources.
+      placeholder: "https://github.com/org/repo"
+    validations:
+      required: false
+
+  - type: dropdown
+    id: resource_type
+    attributes:
+      label: Resource Type
+      description: Which best characterizes this resource?
+      options:
+        - "Open-Source Repository / Framework"
+        - "Foundation Model / Open Weights"
+        - "AI Agent / Autonomous System"
+        - "Developer Tooling / Infrastructure / Serving"
+        - "SDK / Library / Client"
+        - "Commercial AI Product / SaaS"
+        - "Dataset / Benchmark / Evaluation"
+        - "Other"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: primary_category
+    attributes:
+      label: Primary Category
+      description: What primary domain does this resource fit into?
+      options:
+        - "Models & Architectures (LLM, Vision, Audio, Multimodal)"
+        - "Agent Frameworks & Orchestration"
+        - "Inference, Serving & Acceleration"
+        - "Vector Databases & Embeddings"
+        - "Evaluation, Guardrails & Observability"
+        - "Fine-Tuning & Training Frameworks"
+        - "Developer SDKs & API Tooling"
+        - "Autonomous Coding & Copilots"
+        - "Productivity & Creative AI Products"
+        - "Other"
+    validations:
+      required: true
+
+  - type: textarea
+    id: short_description
+    attributes:
+      label: Short Description
+      description: Provide a concise, factual summary (1-3 sentences) of what this resource does. Avoid promotional marketing buzzwords.
+      placeholder: "vLLM is a high-throughput and memory-efficient LLM serving engine powered by PagedAttention."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: pricing_model
+    attributes:
+      label: Pricing & Access Model
+      description: What is the primary pricing/access tier?
+      options:
+        - "Free / Open Source"
+        - "Open Weights (Commercial Friendly)"
+        - "Open Weights (Non-Commercial / Research Only)"
+        - "Freemium / Free Tier Available"
+        - "Paid / Commercial License Only"
+        - "Unknown"
+    validations:
+      required: true
+
+  - type: input
+    id: license
+    attributes:
+      label: License (if open-source or open-weights)
+      description: The open-source or terms-of-use license (e.g., Apache 2.0, MIT, Llama Community License).
+      placeholder: "e.g., Apache 2.0"
+    validations:
+      required: false
+
+  - type: textarea
+    id: why_useful
+    attributes:
+      label: Why is this resource useful to the community?
+      description: Highlight key differentiators, adoption, technical significance, or practical utility for developers.
+      placeholder: "Widely used for production inference due to continuous batching and state-of-the-art throughput."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmations
+    attributes:
+      label: Verification & Contribution Terms
+      options:
+        - label: I have verified that this link is active and points to an official source.
+          required: true
+        - label: I searched the repository and confirmed this is not a duplicate suggestion.
+          required: true
+        - label: I understand that the description provided may be edited for neutrality and licensed under CC BY 4.0.
+          required: true

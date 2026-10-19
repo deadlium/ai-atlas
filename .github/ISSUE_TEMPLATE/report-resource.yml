@@ -1,0 +1,61 @@
+name: Report Resource Issue or Inaccuracy
+description: Report a broken link, incorrect description, outdated licensing, or discontinued project in AI Atlas.
+title: "[Report]: <Resource Name or Issue Summary>"
+labels: ["catalog-fix", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Help us keep AI Atlas accurate and up-to-date! Please describe the issue found in the catalog.
+
+  - type: input
+    id: resource_name
+    attributes:
+      label: Resource Name / Identifier
+      description: What resource is affected?
+      placeholder: "e.g., FastChat, LangChain, etc."
+    validations:
+      required: true
+
+  - type: dropdown
+    id: issue_type
+    attributes:
+      label: Issue Type
+      description: What type of discrepancy or problem are you reporting?
+      options:
+        - "Broken link or dead URL (404/Redirect)"
+        - "Inaccurate or misleading description"
+        - "Incorrect license or pricing information"
+        - "Discontinued, archived, or abandoned project"
+        - "Duplicate entry in catalog"
+        - "Incorrect categorization or tags"
+        - "Intellectual property or trademark concern"
+        - "Other inaccuracy"
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_state
+    attributes:
+      label: Current Catalog State
+      description: What is currently stated or linked in AI Atlas?
+      placeholder: "Link currently points to https://old-broken-url.com or lists license as MIT."
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggested_correction
+    attributes:
+      label: Suggested Correction & Official Evidence
+      description: What should the catalog state instead? Please provide links to official docs, announcements, or repos confirming the change.
+      placeholder: "Project was renamed/migrated to https://new-url.com or upstream repository was archived on 2026-01-15."
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: Confirmation
+      options:
+        - label: I have verified this information against official upstream sources.
+          required: true
