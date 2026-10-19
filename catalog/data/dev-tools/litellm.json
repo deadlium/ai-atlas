@@ -1,0 +1,43 @@
+{
+  "id": "litellm",
+  "name": "LiteLLM",
+  "tagline": "Call 100+ LLM APIs using the OpenAI format with proxy and load-balancing",
+  "description": "LiteLLM standardizes calls across Claude, GPT-4, Llama, Vertex AI, and other providers using the OpenAI format, with built-in routing, fallbacks, and cost tracking.",
+  "url": "https://www.litellm.ai",
+  "official_url": "https://www.litellm.ai",
+  "source_url": "https://github.com/BerriAI/litellm",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/BerriAI/litellm",
+    "license": "MIT",
+    "stars": 19000,
+    "metadata": {}
+  },
+  "resource_type": "sdk",
+  "primary_category": "dev-tools",
+  "categories": [
+    "dev-tools",
+    "infrastructure"
+  ],
+  "tags": [
+    "proxy",
+    "openai-compatible",
+    "gateway",
+    "cost-tracking",
+    "multi-provider"
+  ],
+  "license": "MIT",
+  "pricing": {
+    "model": "open-source",
+    "details_url": null
+  },
+  "deployment": [
+    "local",
+    "self-hosted",
+    "cloud"
+  ],
+  "status": "active",
+  "verified": true,
+  "last_verified_at": "2026-10-19",
+  "added_at": "2026-10-19"
+}

@@ -1,0 +1,42 @@
+{
+  "id": "autogen",
+  "name": "AutoGen",
+  "tagline": "Multi-agent conversation framework for building LLM applications",
+  "description": "AutoGen is an open-source programming framework enabling developers to build agentic workflows using multiple conversational agents that cooperate to solve tasks.",
+  "url": "https://microsoft.github.io/autogen/",
+  "official_url": "https://microsoft.github.io/autogen/",
+  "source_url": "https://github.com/microsoft/autogen",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/microsoft/autogen",
+    "license": "CC-BY-4.0",
+    "stars": 38000,
+    "metadata": {}
+  },
+  "resource_type": "framework",
+  "primary_category": "agents",
+  "categories": [
+    "agents",
+    "frameworks"
+  ],
+  "tags": [
+    "multi-agent",
+    "orchestration",
+    "conversational-ai",
+    "python"
+  ],
+  "license": "CC-BY-4.0",
+  "pricing": {
+    "model": "open-source",
+    "details_url": null
+  },
+  "deployment": [
+    "local",
+    "self-hosted",
+    "cloud"
+  ],
+  "status": "active",
+  "verified": true,
+  "last_verified_at": "2026-10-19",
+  "added_at": "2026-10-19"
+}

@@ -1,0 +1,40 @@
+name: Validate Catalog & CI
+
+on:
+  push:
+    branches:
+      - master
+      - build
+      - feat/*
+      - docs/*
+  pull_request:
+    branches:
+      - master
+      - build
+
+jobs:
+  validate:
+    name: Lint & Test Catalog
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js 22 LTS
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: 'npm'
+
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Validate Catalog Schema
+        run: npm run validate
+
+      - name: Check for Duplicates
+        run: npm run check:duplicates
+
+      - name: Run Test Suite
+        run: npm test

@@ -1,0 +1,43 @@
+{
+  "id": "vllm",
+  "name": "vLLM",
+  "tagline": "High-throughput and memory-efficient LLM serving engine",
+  "description": "vLLM is a high-throughput and memory-efficient serving engine for LLMs featuring PagedAttention, continuous batching, and chunked prefill for fast model serving.",
+  "url": "https://vllm.ai",
+  "official_url": "https://vllm.ai",
+  "source_url": "https://github.com/vllm-project/vllm",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/vllm-project/vllm",
+    "license": "Apache-2.0",
+    "stars": 42000,
+    "metadata": {}
+  },
+  "resource_type": "infrastructure",
+  "primary_category": "infrastructure",
+  "categories": [
+    "infrastructure",
+    "local-ai"
+  ],
+  "tags": [
+    "serving",
+    "llm-inference",
+    "paged-attention",
+    "gpu",
+    "high-throughput"
+  ],
+  "license": "Apache-2.0",
+  "pricing": {
+    "model": "open-source",
+    "details_url": null
+  },
+  "deployment": [
+    "local",
+    "self-hosted",
+    "cloud"
+  ],
+  "status": "active",
+  "verified": true,
+  "last_verified_at": "2026-10-19",
+  "added_at": "2026-10-19"
+}

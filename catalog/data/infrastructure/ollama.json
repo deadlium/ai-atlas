@@ -1,0 +1,43 @@
+{
+  "id": "ollama",
+  "name": "Ollama",
+  "tagline": "Run large language models locally with a single command",
+  "description": "Ollama bundles model weights, configuration, and GPU acceleration into a unified package, allowing developers to run open-weight models locally via a clean CLI and REST API.",
+  "url": "https://ollama.com",
+  "official_url": "https://ollama.com",
+  "source_url": "https://github.com/ollama/ollama",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/ollama/ollama",
+    "license": "MIT",
+    "stars": 110000,
+    "metadata": {}
+  },
+  "resource_type": "application",
+  "primary_category": "local-ai",
+  "categories": [
+    "local-ai",
+    "infrastructure"
+  ],
+  "tags": [
+    "local-inference",
+    "cli",
+    "macos",
+    "linux",
+    "windows",
+    "llm"
+  ],
+  "license": "MIT",
+  "pricing": {
+    "model": "open-source",
+    "details_url": null
+  },
+  "deployment": [
+    "local",
+    "self-hosted"
+  ],
+  "status": "active",
+  "verified": true,
+  "last_verified_at": "2026-10-19",
+  "added_at": "2026-10-19"
+}

@@ -1,0 +1,34 @@
+{
+  "id": "deeplearning-ai",
+  "name": "DeepLearning.AI Short Courses",
+  "tagline": "Practical developer short courses on AI, LLMs, and agentic workflows",
+  "description": "DeepLearning.AI offers practical interactive video courses taught by industry leaders covering prompt engineering, RAG architectures, multi-agent systems, and finetuning.",
+  "url": "https://www.deeplearning.ai/short-courses/",
+  "official_url": "https://www.deeplearning.ai/short-courses/",
+  "source_url": null,
+  "repository": null,
+  "resource_type": "learning-resource",
+  "primary_category": "learning",
+  "categories": [
+    "learning"
+  ],
+  "tags": [
+    "courses",
+    "education",
+    "rag",
+    "agents",
+    "cookbooks"
+  ],
+  "license": "Proprietary",
+  "pricing": {
+    "model": "freemium",
+    "details_url": "https://www.deeplearning.ai"
+  },
+  "deployment": [
+    "browser"
+  ],
+  "status": "active",
+  "verified": true,
+  "last_verified_at": "2026-10-19",
+  "added_at": "2026-10-19"
+}

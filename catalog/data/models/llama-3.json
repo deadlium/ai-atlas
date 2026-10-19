@@ -1,0 +1,42 @@
+{
+  "id": "llama-3",
+  "name": "Llama 3",
+  "tagline": "Open-weight foundation language models developed by Meta AI",
+  "description": "Llama 3 is an open-weight family of multimodal and text foundation models pre-trained on diverse datasets, optimized for dialogue and general reasoning tasks.",
+  "url": "https://llama.meta.com",
+  "official_url": "https://llama.meta.com",
+  "source_url": "https://github.com/meta-llama/llama3",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/meta-llama/llama3",
+    "license": "Custom",
+    "stars": 24000,
+    "metadata": {}
+  },
+  "resource_type": "model",
+  "primary_category": "models",
+  "categories": [
+    "models"
+  ],
+  "tags": [
+    "foundation-model",
+    "open-weights",
+    "llm",
+    "meta"
+  ],
+  "license": "Custom",
+  "pricing": {
+    "model": "open-weights",
+    "details_url": "https://llama.meta.com/llama3/license/"
+  },
+  "deployment": [
+    "local",
+    "self-hosted",
+    "cloud",
+    "api"
+  ],
+  "status": "active",
+  "verified": true,
+  "last_verified_at": "2026-10-19",
+  "added_at": "2026-10-19"
+}

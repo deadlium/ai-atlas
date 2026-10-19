@@ -1,0 +1,333 @@
+[
+  {
+    "id": "autogen",
+    "name": "AutoGen",
+    "tagline": "Multi-agent conversation framework for building LLM applications",
+    "description": "AutoGen is an open-source programming framework enabling developers to build agentic workflows using multiple conversational agents that cooperate to solve tasks.",
+    "url": "https://microsoft.github.io/autogen/",
+    "official_url": "https://microsoft.github.io/autogen/",
+    "source_url": "https://github.com/microsoft/autogen",
+    "repository": {
+      "type": "github",
+      "url": "https://github.com/microsoft/autogen",
+      "license": "CC-BY-4.0",
+      "stars": 38000,
+      "metadata": {}
+    },
+    "resource_type": "framework",
+    "primary_category": "agents",
+    "categories": [
+      "agents",
+      "frameworks"
+    ],
+    "tags": [
+      "multi-agent",
+      "orchestration",
+      "conversational-ai",
+      "python"
+    ],
+    "license": "CC-BY-4.0",
+    "pricing": {
+      "model": "open-source",
+      "details_url": null
+    },
+    "deployment": [
+      "local",
+      "self-hosted",
+      "cloud"
+    ],
+    "status": "active",
+    "verified": true,
+    "last_verified_at": "2026-10-19",
+    "added_at": "2026-10-19"
+  },
+  {
+    "id": "common-crawl",
+    "name": "Common Crawl",
+    "tagline": "Open repository of web crawl data used to train foundation models",
+    "description": "Common Crawl provides open web crawl data petabytes in size, freely accessible on AWS Public Datasets and widely utilized in training large language and multimodal models.",
+    "url": "https://commoncrawl.org",
+    "official_url": "https://commoncrawl.org",
+    "source_url": "https://github.com/commoncrawl",
+    "repository": {
+      "type": "github",
+      "url": "https://github.com/commoncrawl",
+      "license": "Apache-2.0",
+      "stars": 3500,
+      "metadata": {}
+    },
+    "resource_type": "dataset",
+    "primary_category": "data",
+    "categories": [
+      "data",
+      "datasets"
+    ],
+    "tags": [
+      "web-crawl",
+      "corpus",
+      "pre-training",
+      "dataset",
+      "open-data"
+    ],
+    "license": "Custom",
+    "pricing": {
+      "model": "free",
+      "details_url": "https://commoncrawl.org/terms-of-use"
+    },
+    "deployment": [
+      "cloud"
+    ],
+    "status": "active",
+    "verified": true,
+    "last_verified_at": "2026-10-19",
+    "added_at": "2026-10-19"
+  },
+  {
+    "id": "litellm",
+    "name": "LiteLLM",
+    "tagline": "Call 100+ LLM APIs using the OpenAI format with proxy and load-balancing",
+    "description": "LiteLLM standardizes calls across Claude, GPT-4, Llama, Vertex AI, and other providers using the OpenAI format, with built-in routing, fallbacks, and cost tracking.",
+    "url": "https://www.litellm.ai",
+    "official_url": "https://www.litellm.ai",
+    "source_url": "https://github.com/BerriAI/litellm",
+    "repository": {
+      "type": "github",
+      "url": "https://github.com/BerriAI/litellm",
+      "license": "MIT",
+      "stars": 19000,
+      "metadata": {}
+    },
+    "resource_type": "sdk",
+    "primary_category": "dev-tools",
+    "categories": [
+      "dev-tools",
+      "infrastructure"
+    ],
+    "tags": [
+      "proxy",
+      "openai-compatible",
+      "gateway",
+      "cost-tracking",
+      "multi-provider"
+    ],
+    "license": "MIT",
+    "pricing": {
+      "model": "open-source",
+      "details_url": null
+    },
+    "deployment": [
+      "local",
+      "self-hosted",
+      "cloud"
+    ],
+    "status": "active",
+    "verified": true,
+    "last_verified_at": "2026-10-19",
+    "added_at": "2026-10-19"
+  },
+  {
+    "id": "transformers",
+    "name": "Transformers",
+    "tagline": "State-of-the-art machine learning for PyTorch, TensorFlow, and JAX",
+    "description": "Transformers provides APIs and tools to easily download and train state-of-the-art pretrained models across text, computer vision, and audio tasks.",
+    "url": "https://huggingface.co/docs/transformers",
+    "official_url": "https://huggingface.co/docs/transformers",
+    "source_url": "https://github.com/huggingface/transformers",
+    "repository": {
+      "type": "github",
+      "url": "https://github.com/huggingface/transformers",
+      "license": "Apache-2.0",
+      "stars": 136000,
+      "metadata": {}
+    },
+    "resource_type": "framework",
+    "primary_category": "frameworks",
+    "categories": [
+      "frameworks",
+      "developer-tools"
+    ],
+    "tags": [
+      "deep-learning",
+      "pytorch",
+      "huggingface",
+      "nlp",
+      "vision"
+    ],
+    "license": "Apache-2.0",
+    "pricing": {
+      "model": "open-source",
+      "details_url": null
+    },
+    "deployment": [
+      "local",
+      "self-hosted",
+      "cloud"
+    ],
+    "status": "active",
+    "verified": true,
+    "last_verified_at": "2026-10-19",
+    "added_at": "2026-10-19"
+  },
+  {
+    "id": "ollama",
+    "name": "Ollama",
+    "tagline": "Run large language models locally with a single command",
+    "description": "Ollama bundles model weights, configuration, and GPU acceleration into a unified package, allowing developers to run open-weight models locally via a clean CLI and REST API.",
+    "url": "https://ollama.com",
+    "official_url": "https://ollama.com",
+    "source_url": "https://github.com/ollama/ollama",
+    "repository": {
+      "type": "github",
+      "url": "https://github.com/ollama/ollama",
+      "license": "MIT",
+      "stars": 110000,
+      "metadata": {}
+    },
+    "resource_type": "application",
+    "primary_category": "local-ai",
+    "categories": [
+      "local-ai",
+      "infrastructure"
+    ],
+    "tags": [
+      "local-inference",
+      "cli",
+      "macos",
+      "linux",
+      "windows",
+      "llm"
+    ],
+    "license": "MIT",
+    "pricing": {
+      "model": "open-source",
+      "details_url": null
+    },
+    "deployment": [
+      "local",
+      "self-hosted"
+    ],
+    "status": "active",
+    "verified": true,
+    "last_verified_at": "2026-10-19",
+    "added_at": "2026-10-19"
+  },
+  {
+    "id": "vllm",
+    "name": "vLLM",
+    "tagline": "High-throughput and memory-efficient LLM serving engine",
+    "description": "vLLM is a high-throughput and memory-efficient serving engine for LLMs featuring PagedAttention, continuous batching, and chunked prefill for fast model serving.",
+    "url": "https://vllm.ai",
+    "official_url": "https://vllm.ai",
+    "source_url": "https://github.com/vllm-project/vllm",
+    "repository": {
+      "type": "github",
+      "url": "https://github.com/vllm-project/vllm",
+      "license": "Apache-2.0",
+      "stars": 42000,
+      "metadata": {}
+    },
+    "resource_type": "infrastructure",
+    "primary_category": "infrastructure",
+    "categories": [
+      "infrastructure",
+      "local-ai"
+    ],
+    "tags": [
+      "serving",
+      "llm-inference",
+      "paged-attention",
+      "gpu",
+      "high-throughput"
+    ],
+    "license": "Apache-2.0",
+    "pricing": {
+      "model": "open-source",
+      "details_url": null
+    },
+    "deployment": [
+      "local",
+      "self-hosted",
+      "cloud"
+    ],
+    "status": "active",
+    "verified": true,
+    "last_verified_at": "2026-10-19",
+    "added_at": "2026-10-19"
+  },
+  {
+    "id": "deeplearning-ai",
+    "name": "DeepLearning.AI Short Courses",
+    "tagline": "Practical developer short courses on AI, LLMs, and agentic workflows",
+    "description": "DeepLearning.AI offers practical interactive video courses taught by industry leaders covering prompt engineering, RAG architectures, multi-agent systems, and finetuning.",
+    "url": "https://www.deeplearning.ai/short-courses/",
+    "official_url": "https://www.deeplearning.ai/short-courses/",
+    "source_url": null,
+    "repository": null,
+    "resource_type": "learning-resource",
+    "primary_category": "learning",
+    "categories": [
+      "learning"
+    ],
+    "tags": [
+      "courses",
+      "education",
+      "rag",
+      "agents",
+      "cookbooks"
+    ],
+    "license": "Proprietary",
+    "pricing": {
+      "model": "freemium",
+      "details_url": "https://www.deeplearning.ai"
+    },
+    "deployment": [
+      "browser"
+    ],
+    "status": "active",
+    "verified": true,
+    "last_verified_at": "2026-10-19",
+    "added_at": "2026-10-19"
+  },
+  {
+    "id": "llama-3",
+    "name": "Llama 3",
+    "tagline": "Open-weight foundation language models developed by Meta AI",
+    "description": "Llama 3 is an open-weight family of multimodal and text foundation models pre-trained on diverse datasets, optimized for dialogue and general reasoning tasks.",
+    "url": "https://llama.meta.com",
+    "official_url": "https://llama.meta.com",
+    "source_url": "https://github.com/meta-llama/llama3",
+    "repository": {
+      "type": "github",
+      "url": "https://github.com/meta-llama/llama3",
+      "license": "Custom",
+      "stars": 24000,
+      "metadata": {}
+    },
+    "resource_type": "model",
+    "primary_category": "models",
+    "categories": [
+      "models"
+    ],
+    "tags": [
+      "foundation-model",
+      "open-weights",
+      "llm",
+      "meta"
+    ],
+    "license": "Custom",
+    "pricing": {
+      "model": "open-weights",
+      "details_url": "https://llama.meta.com/llama3/license/"
+    },
+    "deployment": [
+      "local",
+      "self-hosted",
+      "cloud",
+      "api"
+    ],
+    "status": "active",
+    "verified": true,
+    "last_verified_at": "2026-10-19",
+    "added_at": "2026-10-19"
+  }
+]

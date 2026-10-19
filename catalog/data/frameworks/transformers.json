@@ -1,0 +1,43 @@
+{
+  "id": "transformers",
+  "name": "Transformers",
+  "tagline": "State-of-the-art machine learning for PyTorch, TensorFlow, and JAX",
+  "description": "Transformers provides APIs and tools to easily download and train state-of-the-art pretrained models across text, computer vision, and audio tasks.",
+  "url": "https://huggingface.co/docs/transformers",
+  "official_url": "https://huggingface.co/docs/transformers",
+  "source_url": "https://github.com/huggingface/transformers",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/huggingface/transformers",
+    "license": "Apache-2.0",
+    "stars": 136000,
+    "metadata": {}
+  },
+  "resource_type": "framework",
+  "primary_category": "frameworks",
+  "categories": [
+    "frameworks",
+    "developer-tools"
+  ],
+  "tags": [
+    "deep-learning",
+    "pytorch",
+    "huggingface",
+    "nlp",
+    "vision"
+  ],
+  "license": "Apache-2.0",
+  "pricing": {
+    "model": "open-source",
+    "details_url": null
+  },
+  "deployment": [
+    "local",
+    "self-hosted",
+    "cloud"
+  ],
+  "status": "active",
+  "verified": true,
+  "last_verified_at": "2026-10-19",
+  "added_at": "2026-10-19"
+}

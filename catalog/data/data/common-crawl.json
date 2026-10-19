@@ -1,0 +1,41 @@
+{
+  "id": "common-crawl",
+  "name": "Common Crawl",
+  "tagline": "Open repository of web crawl data used to train foundation models",
+  "description": "Common Crawl provides open web crawl data petabytes in size, freely accessible on AWS Public Datasets and widely utilized in training large language and multimodal models.",
+  "url": "https://commoncrawl.org",
+  "official_url": "https://commoncrawl.org",
+  "source_url": "https://github.com/commoncrawl",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/commoncrawl",
+    "license": "Apache-2.0",
+    "stars": 3500,
+    "metadata": {}
+  },
+  "resource_type": "dataset",
+  "primary_category": "data",
+  "categories": [
+    "data",
+    "datasets"
+  ],
+  "tags": [
+    "web-crawl",
+    "corpus",
+    "pre-training",
+    "dataset",
+    "open-data"
+  ],
+  "license": "Custom",
+  "pricing": {
+    "model": "free",
+    "details_url": "https://commoncrawl.org/terms-of-use"
+  },
+  "deployment": [
+    "cloud"
+  ],
+  "status": "active",
+  "verified": true,
+  "last_verified_at": "2026-10-19",
+  "added_at": "2026-10-19"
+}
