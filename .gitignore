@@ -77,3 +77,8 @@ env/
 tmp/
 temp/
 .temp/
+
+# Internal prompt & planning documents
+commit.txt
+master-promt.md
+work-plan.md
