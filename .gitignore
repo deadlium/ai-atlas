@@ -77,3 +77,6 @@ env/
 tmp/
 temp/
 .temp/
+commit.txt
+master-promt.md
+work-plan.md
