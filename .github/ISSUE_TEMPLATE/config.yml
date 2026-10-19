@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Ask Questions & Community Discussions
+    url: https://github.com/deadlium/ai-atlas/discussions
+    about: Join community discussions, ask general questions, or share ideas.
+  - name: Contribution Guidelines
+    url: https://github.com/deadlium/ai-atlas/blob/build/CONTRIBUTING.md
+    about: Learn how to suggest resources, contribute entries, and follow our git workflow.
+  - name: Security Vulnerability Reporting
+    url: https://github.com/deadlium/ai-atlas/blob/build/SECURITY.md
+    about: Report security issues privately and responsibly.
