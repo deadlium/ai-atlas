@@ -1,0 +1,257 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-atlas.dev/schemas/resource.schema.json",
+  "title": "AIAtlasResource",
+  "description": "Canonical schema definition for an individual AI Atlas resource record.",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "tagline",
+    "description",
+    "url",
+    "primary_category",
+    "tags",
+    "license",
+    "pricing",
+    "deployment",
+    "status",
+    "verified",
+    "added_at"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "Unique, lowercase alphanumeric identifier using hyphens as delimiters.",
+      "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+      "minLength": 2,
+      "maxLength": 64
+    },
+    "name": {
+      "type": "string",
+      "description": "Official human-readable name of the resource.",
+      "minLength": 2,
+      "maxLength": 100
+    },
+    "tagline": {
+      "type": "string",
+      "description": "A crisp, one-line summary describing what the resource is.",
+      "minLength": 5,
+      "maxLength": 200
+    },
+    "description": {
+      "type": "string",
+      "description": "Objective, factual, and non-promotional summary of capabilities and purpose.",
+      "minLength": 10,
+      "maxLength": 1500
+    },
+    "url": {
+      "type": "string",
+      "description": "Canonical official URL or primary website for the resource.",
+      "format": "uri"
+    },
+    "official_url": {
+      "type": "string",
+      "description": "Explicit official homepage URL (optional alias/mirror of url).",
+      "format": "uri"
+    },
+    "source_url": {
+      "type": ["string", "null"],
+      "description": "Upstream source repository URL, or null if closed-source / not applicable.",
+      "format": "uri"
+    },
+    "repository": {
+      "type": ["object", "null"],
+      "description": "Source code repository metadata where applicable.",
+      "required": ["type", "url"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "type": "string",
+          "enum": ["github", "gitlab", "huggingface", "other"],
+          "description": "Hosting platform for the repository."
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Direct URL to the public code repository."
+        },
+        "license": {
+          "type": ["string", "null"],
+          "description": "Repository software license (SPDX or custom identifier)."
+        },
+        "stars": {
+          "type": ["integer", "null"],
+          "minimum": 0,
+          "description": "Star count at time of catalog verification."
+        },
+        "metadata": {
+          "type": ["object", "null"],
+          "description": "Additional platform-specific metadata."
+        }
+      }
+    },
+    "resource_type": {
+      "type": "string",
+      "enum": [
+        "model",
+        "agent",
+        "framework",
+        "library",
+        "sdk",
+        "api",
+        "dataset",
+        "application",
+        "service",
+        "infrastructure",
+        "learning-resource",
+        "repository"
+      ],
+      "description": "Structural nature of the resource."
+    },
+    "primary_category": {
+      "type": "string",
+      "enum": [
+        "models",
+        "agents",
+        "frameworks",
+        "dev-tools",
+        "infrastructure",
+        "datasets",
+        "learning",
+        "assistants",
+        "coding",
+        "local-ai",
+        "rag",
+        "image-generation",
+        "video-audio",
+        "automation",
+        "evaluation",
+        "research",
+        "data",
+        "developer-tools"
+      ],
+      "description": "The authoritative primary category ID from catalog/categories.json."
+    },
+    "categories": {
+      "type": "array",
+      "description": "Array of category IDs associated with this resource.",
+      "items": {
+        "type": "string",
+        "enum": [
+          "models",
+          "agents",
+          "frameworks",
+          "dev-tools",
+          "infrastructure",
+          "datasets",
+          "learning",
+          "assistants",
+          "coding",
+          "local-ai",
+          "rag",
+          "image-generation",
+          "video-audio",
+          "automation",
+          "evaluation",
+          "research",
+          "data",
+          "developer-tools"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "tags": {
+      "type": "array",
+      "description": "Normalized, lowercase search and discovery tags.",
+      "minItems": 1,
+      "maxItems": 25,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[a-z0-9]+(-[a-z0-9]+)*$",
+        "minLength": 2,
+        "maxLength": 40
+      }
+    },
+    "license": {
+      "type": "string",
+      "description": "Software license SPDX ID, 'Proprietary', 'Custom', or 'NOASSERTION' when unknown.",
+      "minLength": 1,
+      "maxLength": 60
+    },
+    "pricing": {
+      "type": "object",
+      "description": "Pricing model and cost details.",
+      "required": ["model"],
+      "additionalProperties": false,
+      "properties": {
+        "model": {
+          "type": "string",
+          "enum": [
+            "open-source",
+            "open-weights",
+            "commercial",
+            "freemium",
+            "free",
+            "paid",
+            "unknown"
+          ],
+          "description": "Economic access model."
+        },
+        "details_url": {
+          "type": ["string", "null"],
+          "format": "uri",
+          "description": "URL to official pricing page or tier documentation."
+        }
+      }
+    },
+    "deployment": {
+      "type": "array",
+      "description": "Supported runtime and hosting environments.",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "enum": [
+          "local",
+          "self-hosted",
+          "cloud",
+          "api",
+          "browser",
+          "mobile",
+          "desktop"
+        ]
+      }
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "deprecated", "archived", "beta"],
+      "description": "Upstream maintenance and operational status."
+    },
+    "verified": {
+      "type": "boolean",
+      "description": "Whether this record has undergone maintainer or peer verification."
+    },
+    "last_verified_at": {
+      "type": ["string", "null"],
+      "description": "ISO 8601 date (YYYY-MM-DD) of the most recent factual verification.",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "verified_at": {
+      "type": ["string", "null"],
+      "description": "Alias for last_verified_at.",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "added_at": {
+      "type": "string",
+      "description": "ISO 8601 date (YYYY-MM-DD) when the resource was added to the catalog.",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+    },
+    "notes": {
+      "type": ["string", "null"],
+      "description": "Optional maintainer notes regarding verification nuances or limits."
+    }
+  }
+}

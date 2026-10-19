@@ -1,0 +1,10 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://ai-atlas.dev/catalog/schema.json",
+  "title": "AIAtlasCatalog",
+  "description": "Schema for the AI Atlas canonical catalog containing an array of valid resources.",
+  "type": "array",
+  "items": {
+    "$ref": "../schemas/resource.schema.json"
+  }
+}

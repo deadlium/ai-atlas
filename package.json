@@ -1,0 +1,36 @@
+{
+  "name": "ai-atlas",
+  "version": "0.1.0",
+  "description": "The open map of the AI ecosystem",
+  "type": "module",
+  "scripts": {
+    "validate": "node scripts/validate-catalog.js",
+    "validate:catalog": "node scripts/validate-catalog.js",
+    "check:duplicates": "node scripts/check-duplicates.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deadlium/ai-atlas.git"
+  },
+  "keywords": [
+    "ai",
+    "directory",
+    "catalog",
+    "machine-learning",
+    "open-source"
+  ],
+  "author": "AI Atlas Contributors",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/deadlium/ai-atlas/issues"
+  },
+  "homepage": "https://github.com/deadlium/ai-atlas#readme",
+  "dependencies": {
+    "ajv": "^8.17.1",
+    "ajv-formats": "^3.0.1"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

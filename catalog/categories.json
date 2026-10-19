@@ -1,0 +1,110 @@
+[
+  {
+    "id": "models",
+    "name": "Models & Checkpoints",
+    "description": "Foundation models, open-weight checkpoints, fine-tunes, and model discovery platforms.",
+    "slug": "models"
+  },
+  {
+    "id": "agents",
+    "name": "Autonomous Agents & Orchestration",
+    "description": "Autonomous agent frameworks, multi-agent coordination systems, and tool execution engines.",
+    "slug": "agents"
+  },
+  {
+    "id": "frameworks",
+    "name": "AI & Deep Learning Frameworks",
+    "description": "Core machine learning and deep learning libraries, training frameworks, and model architectures.",
+    "slug": "frameworks"
+  },
+  {
+    "id": "dev-tools",
+    "name": "Developer Tools & SDKs",
+    "description": "Developer SDKs, prompt engineering tools, proxy gateways, and integration utilities.",
+    "slug": "dev-tools"
+  },
+  {
+    "id": "infrastructure",
+    "name": "Serving & Infrastructure",
+    "description": "High-throughput inference engines, GPU orchestration, model serving, and compute deployment stacks.",
+    "slug": "infrastructure"
+  },
+  {
+    "id": "datasets",
+    "name": "Datasets & Data Preparation",
+    "description": "High-quality public datasets, synthetic data generation pipelines, annotation, and curation tooling.",
+    "slug": "datasets"
+  },
+  {
+    "id": "learning",
+    "name": "Learning Resources & Cookbooks",
+    "description": "Interactive courses, tutorials, implementation cookbooks, and educational guides.",
+    "slug": "learning"
+  },
+  {
+    "id": "assistants",
+    "name": "Conversational Assistants & Research",
+    "description": "Conversational AI assistants, copilots, and multi-turn research interfaces.",
+    "slug": "assistants"
+  },
+  {
+    "id": "coding",
+    "name": "Coding Assistants & Productivity",
+    "description": "AI-assisted programming environments, automated code review, and developer workflow enhancers.",
+    "slug": "coding"
+  },
+  {
+    "id": "local-ai",
+    "name": "Local Inference & On-Device AI",
+    "description": "Self-hosted runtime environments, quantized model runtimes, and local private AI stacks.",
+    "slug": "local-ai"
+  },
+  {
+    "id": "rag",
+    "name": "RAG & Vector Search",
+    "description": "Retrieval-augmented generation pipelines, vector databases, indexing engines, and embedding tools.",
+    "slug": "rag"
+  },
+  {
+    "id": "image-generation",
+    "name": "Image Generation & Vision",
+    "description": "Text-to-image synthesis models, image generation tools, vision models, and neural editing.",
+    "slug": "image-generation"
+  },
+  {
+    "id": "video-audio",
+    "name": "Audio, Speech & Video AI",
+    "description": "Speech-to-text, text-to-speech, audio synthesis, and neural video generation systems.",
+    "slug": "video-audio"
+  },
+  {
+    "id": "automation",
+    "name": "Workflow Automation & RPA",
+    "description": "AI-driven workflow automations, enterprise process integrations, and webhook triggers.",
+    "slug": "automation"
+  },
+  {
+    "id": "evaluation",
+    "name": "Evaluation, Benchmarks & Observability",
+    "description": "Model benchmark frameworks, LLM observability, tracing, red-teaming, and security audits.",
+    "slug": "evaluation"
+  },
+  {
+    "id": "research",
+    "name": "Research Papers & Experimental Implementations",
+    "description": "Seminal research papers, open reproducible implementations, and benchmark datasets.",
+    "slug": "research"
+  },
+  {
+    "id": "data",
+    "name": "Data Engineering & Processing",
+    "description": "ETL pipelines, data cleaning, format converters, and feature stores for AI.",
+    "slug": "data"
+  },
+  {
+    "id": "developer-tools",
+    "name": "Developer Libraries & APIs",
+    "description": "Standard client APIs, wrappers, and integration libraries for AI systems.",
+    "slug": "developer-tools"
+  }
+]
